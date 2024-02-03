@@ -45,31 +45,28 @@ h1 {
     font-size: 60px;
 }
 
-
 .background {
     background-color: rgb(179, 236, 250);
     background-image: url(../../imgs/background.jpg);
     background-size: cover;
 }
 
-#header-welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 100px;
-}
 
 header {
     display: flex;
     justify-content: center;
-    padding: 15px 0;
-    padding-bottom: 100px;
+    padding-top: 15px;
+}
+
+#welcome {
+    padding-top: 100px;
+    padding-bottom: 130px;
 }
 
 .header-links {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .header-links li a {
@@ -157,6 +154,9 @@ footer {
 
 
 @media (max-width: 1500px) {
+    .header-links {
+        gap: 40px;
+    }
 
     #header-welcome {
         -webkit-backdrop-filter: blur(2px);
@@ -165,25 +165,25 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        visibility: hidden;
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
 
     #header-welcome {
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
     }
 
-    .header-links {
-        flex-direction: column;
-        gap: 6px;
-    }
-
     h1 {
-        font-size: 50px;
+        font-size: 55px;
     }
 }
 
 @media (min-width: 768px) {
 
-    /* Horizontal layout for larger screens */
     .technologies-container ul {
         flex-direction: row;
         flex-wrap: wrap;

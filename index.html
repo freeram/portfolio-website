@@ -13,7 +13,7 @@
 <body>
     <header id="header">
         <nav>
-            <ul>
+            <ul class="header-links">
                 <li><a href="#welcome">Welcome</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#technologies">Technologies</a></li>
@@ -24,7 +24,7 @@
     </header>
 
     <section id="welcome">
-        <div class="welcome-container">
+        <div class="container welcome-container">
             <h1>Welcome!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In diam leo, condimentum nec egestas in,
                 vestibulum vel enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
@@ -33,7 +33,7 @@
     </section>
 
     <section id="about-me">
-        <div class="about-me-container">
+        <div class="container about-me-container">
             <h2>About me</h2>
             <p>Integer eget sollicitudin elit, quis ullamcorper nisi. Fusce dictum nec neque sit amet viverra. Etiam
                 bibendum mi in sagittis tempus. Cras et urna tincidunt magna varius dapibus at in dui. Phasellus tellus
@@ -43,26 +43,32 @@
     </section>
 
     <section id="technologies">
-        <div class="technologies-container">
-            <h2>Technologies I know</h2>
+        <div class="container technologies-container">
+            <h2>Technologies I use:</h2>
             <ul>
-                <li>
-                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30"> Technology 1
+                <li class="technology">
+                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30">
+                    <p>Technology 1</p>
                 </li>
-                <li>
-                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30"> Technology 2
+                <li class="technology">
+                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30">
+                    <p>Technology 2</p>
                 </li>
-                <li>
-                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30"> Technology 3
+                <li class="technology">
+                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30">
+                    <p>Technology 3</p>
                 </li>
-                <li>
-                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30"> Technology 4
+                <li class="technology">
+                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30">
+                    <p>Technology 4</p>
                 </li>
-                <li>
-                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30"> Technology 5
+                <li class="technology">
+                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30">
+                    <p>Technology 5</p>
                 </li>
-                <li>
-                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30"> Technology 6
+                <li class="technology">
+                    <img src="imgs/placeholder.png" alt="Placeholder Icon" width="30" height="30">
+                    <p>Technology 6</p>
                 </li>
             </ul>
         </div>
@@ -71,25 +77,30 @@
     <section id="projects">
         <h2>My Projects</h2>
 
-        <article class="project">
-            <h3>Project Title 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-                dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
-                massa, varius a, semper congue, euismod non, mi.</p>
-            <a href="https://example.com" target="_blank">View Project</a>
-        </article>
+        <div class="container projects-container">
+            <article class="project">
+                <h3>Project Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+                    ligula
+                    massa, varius a, semper congue, euismod non, mi.</p>
+                <a href="https://example.com" target="_blank">View Project</a>
+            </article>
 
-        <article class="project">
-            <h3>Project Title 2</h3>
-            <p>Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis
-                ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium
-                blandit orci.</p>
-            <a href="https://example.com" target="_blank">View Project</a>
-        </article>
+            <article class="project">
+                <h3>Project Title 2</h3>
+                <p>Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac,
+                    facilisis
+                    ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed
+                    pretium
+                    blandit orci.</p>
+                <a href="https://example.com" target="_blank">View Project</a>
+            </article>
+        </div>
     </section>
 
     <section id="contact-me">
-        <div class="contact-me-container">
+        <div class="container contact-me-container">
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me through LinkedIn or send me an email! I will respond as quickly as I can.
             </p>

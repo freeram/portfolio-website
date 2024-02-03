@@ -19,15 +19,51 @@ body {
     flex-direction: column;
 }
 
-#header, #welcome, #about-me {
-    background-color: rgb(255, 216, 222);
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 20px 5vw;
+    gap: 30px;
+}
+
+p {
+    max-width: 80ch;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+.background {
+    background-color: rgb(179, 236, 250);
+    background-image: url(../../imgs/background.jpg);
+    background-size: cover;
+}
+
+#header-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
 
 header {
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    padding-bottom: 100px;
 }
 
 .header-links {
@@ -43,27 +79,10 @@ header {
     text-decoration: none;
 }
 
-
-section {
+.welcome-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    padding: 20px 5vw;
-    gap: 30px;
-}
-
-p {
-    max-width: 80ch;
+    gap: 60px;
 }
 
 
@@ -136,12 +155,29 @@ footer {
     outline: 2px solid #383838;
 }
 
+
+@media (max-width: 1500px) {
+
+    #header-welcome {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+}
+
 @media (max-width: 768px) {
 
-    /* Stack the navigation items vertically on smaller screens */
+    #header-welcome {
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+
     .header-links {
         flex-direction: column;
         gap: 6px;
+    }
+
+    h1 {
+        font-size: 50px;
     }
 }
 

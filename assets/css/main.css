@@ -1,3 +1,7 @@
+:root {
+    --about-me-color: #f4f4f4;
+}
+
 /* Reset for consistency across browsers */
 body,
 h1,
@@ -14,7 +18,7 @@ ul {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: var(--about-me-color);
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +28,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 18px 0px;
+    padding: 26px 0px;
 }
 
 .container {
@@ -33,7 +37,7 @@ section {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    padding: 20px 5vw;
+    padding: 20px 0;
     gap: 30px;
 }
 
@@ -42,7 +46,12 @@ p {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 
 .introduction-text,
@@ -55,8 +64,8 @@ h1 {
     background-color: rgb(179, 236, 250);
     background-image: url(../../imgs/background.jpg);
     background-size: cover;
-    background-attachment: fixed;
 }
+
 
 #hero {
     position: relative;
@@ -75,12 +84,13 @@ h1 {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 79px;
+    height: 50px;
 }
 
 .wave .shape-fill {
-    fill: #F4F4F4;
+    fill: var(--about-me-color);
 }
+
 
 header {
     display: flex;
@@ -116,6 +126,15 @@ header {
     gap: 60px;
 }
 
+
+#about-me {
+    padding-top: 40px;
+}
+
+
+#technologies {
+    padding-bottom: 40px;
+}
 
 .technologies-container ul {
     display: flex;
@@ -209,6 +228,10 @@ footer {
     #hero {
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
+    }
+
+    .wave svg {
+        height: 30px;
     }
 
     h1 {

@@ -45,6 +45,11 @@ h1 {
     font-size: 60px;
 }
 
+.introduction-text, .about-me-text {
+    font-size: 20px;
+}
+
+
 .background {
     background-color: rgb(179, 236, 250);
     background-image: url(../../imgs/background.jpg);
@@ -59,8 +64,12 @@ header {
 }
 
 #welcome {
-    padding-top: 100px;
-    padding-bottom: 130px;
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+
+.welcome-container {
+    max-width: 800px;
 }
 
 .header-links {

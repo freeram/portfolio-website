@@ -66,16 +66,23 @@ h2 {
 }
 
 
+#hero {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 15px;
 }
 
 .header-links {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-around;
+    max-width: 900px;
+    flex: 1;
 }
 
 .header-links li a {
@@ -87,8 +94,11 @@ header {
 
 
 #welcome {
-    padding-top: 80px;
-    padding-bottom: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 620px;
+    flex: 1;
 }
 
 .welcome-container {
@@ -200,18 +210,20 @@ footer {
 }
 
 
-@media (max-width: 1500px) {
-    .header-links {
-        gap: 40px;
-    }
-}
-
 @media (max-width: 768px) {
     header {
         visibility: hidden;
         padding: 0;
         width: 0;
         height: 0;
+    }
+
+    #hero {
+        height: 100vh;
+    }
+
+    #welcome {
+        justify-content: space-evenly;
     }
 
     h1 {

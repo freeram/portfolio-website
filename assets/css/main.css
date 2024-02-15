@@ -1,6 +1,9 @@
 :root {
-    --main-bg: #202125;
-    --main-text: #d4d4d4;
+    --main-bg: #262533;
+    --main-text: #e8e8e9;
+    --secondary-text: #eeeeee;
+    --cool-yellow: #ffc25c;
+    --link-hover-color: #ffdfa9;
 }
 
 /* Reset for consistency across browsers */
@@ -58,13 +61,8 @@ h2 {
 
 .introduction-text,
 .about-me-text {
+    color: var(--secondary-text);
     font-size: 20px;
-}
-
-
-#hero {
-    background-color: var(--main-bg);
-    background-image: linear-gradient(to bottom right, var(--main-bg), #ae6fb9);
 }
 
 
@@ -81,7 +79,7 @@ header {
 }
 
 .header-links li a {
-    color: var(--main-text);
+    color: var(--cool-yellow);
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -98,6 +96,24 @@ header {
     flex-direction: column;
     max-width: 800px;
     gap: 60px;
+}
+
+#down-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 70px;
+}
+
+#down-btn-icon {
+    width: 70px;
+    height: auto;
+    color: var(--cool-yellow);
 }
 
 
@@ -135,16 +151,21 @@ header {
 .project {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
-    padding: 15px;
+    border: 1px solid var(--secondary-text);
     border-radius: 8px;
+    padding: 15px;
     gap: 16px;
 }
 
-.project a {
+.project p {
+    color: var(--secondary-text);
+}
+
+.project a,
+.contact-me-inner p a {
     align-self: center;
     text-decoration: none;
-    color: var(--main-text);
+    color: var(--cool-yellow);
     font-weight: bold;
 }
 
@@ -155,6 +176,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-size: 18px;
 }
 
 
@@ -168,14 +190,13 @@ footer {
 
 
 .header-links li a:hover,
-.project a:hover {
-    text-decoration: underline;
-    color: #383838;
+.project a:hover,
+.contact-me-inner p a:hover {
+    color: var(--link-hover-color);
 }
 
-.header-links li a:focus,
-.project a:focus {
-    outline: 2px solid #383838;
+#down-btn-icon:hover {
+    color: var(--link-hover-color);
 }
 
 

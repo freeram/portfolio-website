@@ -72,26 +72,6 @@ h2 {
     font-size: 20px;
 }
 
-.clickable {
-    transition: transform 0.1s ease;
-}
-
-.clickable:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.clickable:active {
-    -webkit-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -o-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-}
-
 
 #hero {
     display: flex;
@@ -140,8 +120,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -149,11 +129,18 @@ header {
     margin-top: 70px;
 }
 
-
 .down-btn-icon {
-    width: 70px;
+    width: 80px;
     height: auto;
     color: var(--cool-yellow);
+}
+
+.down-btn:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .down-btn-icon:hover {
@@ -234,9 +221,9 @@ header {
     appearance: button;
     background-color: var(--cool-yellow);
     color: var(--main-bg);
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 12px;
+    font-size: 18px;
+    padding: 5px 18px;
+    border-radius: 8px;
     font-weight: bold;
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -264,27 +251,9 @@ header {
     font-weight: bold;
 }
 
-.linkedin-btn {
-    padding: 8px 10px;
-    transition: transform 0.1s ease;
+.btn.linkedin-btn {
+    padding: 7px 15px;
 }
-
-.linkedin-btn:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.linkedin-btn:active {
-    -webkit-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -o-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-}
-
 
 
 footer {
@@ -294,6 +263,20 @@ footer {
     min-height: 40px;
     margin-top: 40px;
 }
+
+
+.clickable {
+    transition: all 150ms ease;
+}
+
+.clickable:active {
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
 
 
 @media (max-width: 768px) {

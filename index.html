@@ -16,25 +16,24 @@
     <div id="hero">
         <header id="header">
             <ul class="header-links">
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact me</a></li>
+                <li class="clickable"><a href="#about-me" class="header-link">About me</a></li>
+                <li class="clickable"><a href="#technologies" class="header-link">Technologies</a></li>
+                <li class="clickable"><a href="#projects" class="header-link">Projects</a></li>
+                <li class="clickable"><a href="#contact-me" class="header-link">Contact me</a></li>
             </ul>
         </header>
 
         <section id="welcome">
             <div class="container welcome-container">
                 <h1>Welcome!</h1>
-                <p class="introduction-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In diam leo,
+                <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In diam leo,
                     condimentum nec egestas in,
                     vestibulum vel enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
                     cubilia
                     curae.</p>
             </div>
-            <button id="down-btn">
-                <svg id="down-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            <button class="down-btn">
+                <svg class="clickable down-btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
@@ -89,24 +88,30 @@
     <section id="projects">
         <h2>My Projects</h2>
 
-        <div class="container projects-container">
+        <div class="container projects-container" style="--i: 0">
             <article class="project">
-                <h3>Project Title 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-                    dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
-                    ligula
-                    massa, varius a, semper congue, euismod non, mi.</p>
-                <a href="https://example.com" target="_blank">View Project</a>
+                <img class="project-img" src="imgs/placeholder2.jpg">
+                <div class="container project-info">
+                    <h3>Project Title 1</h3>
+                    <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                        dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+                        ligula
+                        massa, varius a, semper congue, euismod non, mi.</p>
+                    <a href="https://example.com" target="_blank" class="clickable btn">View Code</a>
+                </div>
             </article>
 
-            <article class="project">
-                <h3>Project Title 2</h3>
-                <p>Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac,
-                    facilisis
-                    ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed
-                    pretium
-                    blandit orci.</p>
-                <a href="https://example.com" target="_blank">View Project</a>
+            <article class="project" style="--i: 1">
+                <img class="project-img" src="imgs/placeholder2.jpg">
+                <div class="container project-info">
+                    <h3>Project Title 2</h3>
+                    <p class="project-text">Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac,
+                        facilisis
+                        ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed
+                        pretium
+                        blandit orci.</p>
+                    <a href="https://example.com" target="_blank" class="clickable btn">View Code</a>
+                </div>
             </article>
         </div>
     </section>
@@ -119,12 +124,10 @@
                     can.
                 </p>
 
-                <p>
-                    <a href="https://www.linkedin.com/in/pkulikov" target="_blank">Connect with me on LinkedIn</a>
-                </p>
+                <a href="https://www.linkedin.com/in/pkulikov" target="_blank" class="btn linkedin-btn">Connect with me on LinkedIn</a>
 
                 <p>
-                    Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    Email: <a href="mailto:your.email@example.com" class="email">your.email@example.com</a>
                 </p>
             </div>
         </div>

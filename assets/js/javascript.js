@@ -1,5 +1,5 @@
-const headerLinks = document.querySelectorAll('.header-links a');
-const scrollBtn = document.getElementById("down-btn");
+const headerLinks = document.querySelectorAll('.header-link');
+const scrollBtn = document.querySelector(".down-btn");
 const aboutMe = document.getElementById("about-me");
 
 

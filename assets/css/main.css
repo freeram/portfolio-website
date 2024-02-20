@@ -183,22 +183,29 @@ header {
     padding-bottom: 40px;
 }
 
+.technologies-container {
+    gap: 40px;
+    max-width: 1500px;
+}
+
 .technologies-container ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 31px;
 }
 
 .technology {
     display: flex;
-    gap: 20px;
-    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 22px;
 }
 
 .icon {
     height: auto;
-    width: 30px;
+    width: 48px;
 }
 
 
@@ -247,7 +254,7 @@ header {
     -moz-appearance: button;
     appearance: button;
     background-color: var(--cool-yellow);
-    color: var(--main-bg);
+    color: black;
     font-size: 18px;
     padding: 5px 18px;
     border-radius: 8px;

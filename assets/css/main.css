@@ -5,7 +5,7 @@
     --main-bg: #262533;
     --main-text: #e8e8e9;
     --secondary-text: #eeeeee;
-    --cool-yellow: #ffc25c;
+    --cool-yellow: #ffc155;
     --link-hover-color: #ffdfa9;
 }
 
@@ -97,6 +97,11 @@ header {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    transition: all 160ms ease;
+}
+
+.header-link:hover {
+    color: var(--link-hover-color);
 }
 
 
@@ -133,6 +138,7 @@ header {
     width: 80px;
     height: auto;
     color: var(--cool-yellow);
+    transition: all 160ms ease;
 }
 
 .down-btn:hover {
@@ -159,7 +165,8 @@ header {
 
 .technologies-container ul {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -266,7 +273,7 @@ footer {
 
 
 .clickable {
-    transition: all 150ms ease;
+    transition: all 160ms ease;
 }
 
 .clickable:active {
@@ -276,7 +283,6 @@ footer {
     -ms-transform: scale(0.95);
     transform: scale(0.95);
 }
-
 
 
 @media (max-width: 768px) {
@@ -310,16 +316,6 @@ footer {
 
     .project:nth-child(even) {
         flex-direction: column;
-    }
-
-}
-
-@media (min-width: 768px) {
-
-    .technologies-container ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
 }

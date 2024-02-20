@@ -63,8 +63,8 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
-    padding-bottom: 20px;
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
 .welcome-text,
@@ -94,7 +94,7 @@ header {
 
 .header-link {
     color: var(--cool-yellow);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-decoration: none;
     transition: all 160ms ease;
@@ -106,32 +106,52 @@ header {
 
 
 #welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     min-height: 620px;
     flex: 1;
 }
 
 .welcome-container {
+    max-width: min(800px, 90vw);
+    gap: 17px;
+}
+
+.welcome-big {
     display: flex;
     flex-direction: column;
-    max-width: min(800px, 90vw);
-    gap: 60px;
-    flex: 0;
+    justify-content: center;
+}
+
+.welcome-subtext {
+    align-self: flex-end;
+}
+
+.welcome-subtext h2 {
+    font-size: 55px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.welcome-subtext h2::before {
+    content: "";
+    border-right: 10px solid var(--cool-yellow);
+    position: absolute;
+    top: 18px;
+    bottom: 18px;
+    left: 0px;
 }
 
 .down-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .down-btn-icon {

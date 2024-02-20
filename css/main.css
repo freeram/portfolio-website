@@ -67,6 +67,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+h3 {
+    font-size: 28px;
+}
+
 .welcome-text,
 .about-me-text {
     font-size: 20px;
@@ -179,7 +183,7 @@ header {
 }
 
 .about-me-container {
-    max-width: 1000px;
+    max-width: min(1000px, 90vw);
 }
 
 
@@ -213,8 +217,13 @@ header {
 }
 
 
+#projects {
+    gap: 15px;
+}
+
 .projects-container {
-    max-width: 1500px;
+    max-width: min(1500px, 90vw);
+    gap: 60px;
 }
 
 .project {
@@ -335,6 +344,10 @@ footer {
 
     h1 {
         font-size: 55px;
+    }
+
+    .project {
+        gap: 20px;
     }
 
 }

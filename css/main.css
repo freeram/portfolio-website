@@ -51,7 +51,6 @@ section {
     padding: 20px 0;
     gap: 30px;
     width: 100%;
-    text-align: center;
 }
 
 p {
@@ -71,8 +70,7 @@ h3 {
     font-size: 28px;
 }
 
-.welcome-text,
-.about-me-text {
+.welcome-text {
     font-size: 20px;
 }
 
@@ -145,6 +143,10 @@ header {
     left: 0px;
 }
 
+.welcome-text {
+    font-size: 21px;
+}
+
 .down-btn {
     display: flex;
     justify-content: center;
@@ -184,6 +186,7 @@ header {
 
 .about-me-container {
     max-width: min(1000px, 90vw);
+    font-size: 20px;
 }
 
 
@@ -226,6 +229,25 @@ header {
     gap: 60px;
 }
 
+.project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+
+.project-icon {
+    height: auto;
+    width: 35px;
+}
+
 .project {
     display: flex;
     flex: 1 1;
@@ -245,6 +267,13 @@ header {
     gap: 40px;
 }
 
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 17px;
+}
+
 .project-img {
     align-self: center;
     max-width: min(90vw, 500px);
@@ -254,10 +283,6 @@ header {
     border-radius: 8px;
 }
 
-.project-text {
-    text-align: left;
-    font-size: 17px;
-}
 
 
 .btn {
